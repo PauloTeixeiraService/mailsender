@@ -7,7 +7,7 @@ const path = require('path')
 
 env.config()
 
-const port = 8000;
+const port = 1234;
 
 app.use(express.json())
 app.use(cors())
