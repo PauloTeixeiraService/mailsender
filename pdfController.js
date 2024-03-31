@@ -10,6 +10,8 @@ exports.sendPdf = (req,res)=>{
 
     fs.writeFile("./" + req.file.originalname, req.file.buffer,     function(err) {
 
+        console.log(err)
+
         attachment = fs.readFileSync("./"+req.file.originalname).toString("base64")
 
         let smtpTransport = nodemailer.createTransport({
