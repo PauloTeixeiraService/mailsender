@@ -8,7 +8,7 @@ env.config()
 
 exports.sendPdf = (req,res)=>{
 
-    fs.writeFile("./" + req.file.originalname, req.file.buffer,     function(err) {
+    fs.writeFile("/tmp/" + req.file.originalname, req.file.buffer,     function(err) {
 
         console.log(err)
 
