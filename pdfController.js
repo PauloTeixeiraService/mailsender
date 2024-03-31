@@ -12,7 +12,7 @@ exports.sendPdf = (req,res)=>{
 
         console.log(err)
 
-        attachment = fs.readFileSync("./"+req.file.originalname).toString("base64")
+        attachment = fs.readFileSync("/tmp/"+req.file.originalname).toString("base64")
 
         let smtpTransport = nodemailer.createTransport({
             host:'smtp.gmail.com',
@@ -37,7 +37,7 @@ exports.sendPdf = (req,res)=>{
                     content:attachment,
                     filename:req.file.originalname,
                     contentType: 'application/pdf',
-                    path:"./"+ req.file.originalname
+                    path:"/tmp/"+ req.file.originalname
                 }
             ]
         },function(error,info){
