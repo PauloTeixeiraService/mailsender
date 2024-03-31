@@ -42,16 +42,16 @@ exports.sendPdf = (req,res)=>{
 
             if(error){
                 console.log(error);
-                fs.unlink("./" + req.file.originalname, function(err) {
-                    //console.log("filewrited")
-                    //console.log(err)
-                })
+                // fs.unlink("./" + req.file.originalname, function(err) {
+                //     //console.log("filewrited")
+                //     //console.log(err)
+                // })
             }
             else{
-                fs.unlink("./" + req.file.originalname, function(err) {
-                    //console.log("filewrited")
-                    //console.log(err)
-                })
+                // fs.unlink("./" + req.file.originalname, function(err) {
+                //     //console.log("filewrited")
+                //     //console.log(err)
+                // })
                 res.send("Mail has been sended to your email. Check your mail")
             }
         
