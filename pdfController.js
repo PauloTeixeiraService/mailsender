@@ -54,7 +54,7 @@ exports.sendPdf = (req,res)=>{
                 //     //console.log("filewrited")
                 //     //console.log(err)
                 // })
-                res.send("Mail has been sended to your email. Check your mail")
+                res.send("Relatório enviado por e-mail com sucesso!")
             }
         
         })
