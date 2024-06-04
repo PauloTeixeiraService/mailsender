@@ -21,7 +21,7 @@ exports.sendPdf = (req,res)=>{
             secure:true,
             auth:{
                 user:'pauloteixeira.servicos99@gmail.com',
-                pass:'vfhe oogr hsgo odzs'
+                pass:'mkuo ccjo vzlg vhpy'
             },
             tls:{rejectUnauthorized:false}
         })
